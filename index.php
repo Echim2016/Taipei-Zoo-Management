@@ -89,7 +89,7 @@ if (!$link) {
 		<div class="pattern height-resize">
 			<div class="container">
 				<h1 class="site-title">
-					Wellcome!
+					Welcome!
 				</h1><!-- /.site-title -->
 				<h3 class="section-name">
 					<span>
