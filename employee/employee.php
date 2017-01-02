@@ -170,6 +170,11 @@
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
 				</p><!-- /.section-description -->
 
+				
+					<div class="social-btn-container">
+
+					</div><!-- /.social-btn-container -->
+
 					<p class="time-until">
 					<a href="list.php"><span>GO!!!!!!!</span></a>
 					</p><!-- /.time-until -->
