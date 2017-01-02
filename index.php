@@ -77,6 +77,7 @@ if (!$link) {
 			<ul class="nav navbar-nav">
 				<li><a href="animal/animal.php">Go to Animal</a></li>		
 				<li><a href="employee/employee.php">Go to Employee</a></li>				
+				<li><a href="event/event.php">Go to Events</a></li>				
 			</ul>
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->

@@ -761,7 +761,21 @@ form.news-letter .btn{
 	left:100%;
 	font-size:40px;
 }
-.btn1:hover{
+.btn2:hover{
+	color:#3498db;
+}
+.btn3{
+
+	width:60px;
+	height:60px;
+	border:0px solid #fff;
+	position:absolute;
+	background: transparent;
+	top:300%;
+	left:100%;
+	font-size:40px;
+}
+.btn3:hover{
 	color:#3498db;
 }
 

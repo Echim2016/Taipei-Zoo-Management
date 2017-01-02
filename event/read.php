@@ -1,12 +1,12 @@
 <?php
 
-  $animal_name = $_REQUEST['read_name'];
+  $event_name = $_REQUEST['read_name'];
 
   $link = mysql_connect("localhost","root","");
   mysql_select_db("taipeizoo");
   mysql_query("set names utf8");
   
-  $data = mysql_query("select * from animal where A_Name ='$animal_name' OR A_ID ='$animal_name' OR Orders ='$animal_name'");
+  $data = mysql_query("select * from event where EV_Name ='$event_name' OR EV_ID ='$event_name' OR (St_Date <='$event_name' AND En_Date >= '$event_name')");
 
   if (!$link) {
     die('error'.mysql_error());
@@ -60,9 +60,10 @@
             <div>
             <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
             <tr>
-            <td align="center">id</td>
-            <td align="center">Animal Name</td>
-            <td align="center">Orders</td>
+            <td align="center">Event ID</td>
+            <td align="center">Event Name</td>
+            <td align="center">Start Date</td>
+            <td align="center">End Date</td>
             </tr>
 
             <?php
@@ -78,6 +79,7 @@
               <td align="center"><?php echo $rs[0]?></td>
               <td align="center"><?php echo $rs[1]?></td>
               <td align="center"><?php echo $rs[2]?></td>
+              <td align="center"><?php echo $rs[3]?></td>
             </tr>
             <?php
               }
@@ -87,7 +89,7 @@
             </div><!-- /.contact-box-hide -->
 
           <div class="next-section">
-            <a href="animal.php"><span></span></a>
+            <a href="event.php"><span></span></a>
           </div><!-- /.next-section -->
 
         </div><!-- /.container -->
