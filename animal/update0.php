@@ -90,7 +90,7 @@
                   <div class="subscribe-hide">
                     <input class="form-control" type="email" id="update_name" name="update_name" placeholder="Enter the animal's updated name"  required>
                     <input class="form-control" type="email" id="update_order" name="update_order" placeholder="Enter the animal's updated orders!"  required>
-                    <button class="btn1"><i class="fa fa-chevron-circle-right"></i></button>
+                    <button class="btn0"><i class="fa fa-chevron-circle-right"></i></button>
                   </div><!-- /.subscribe-hide -->
              </form><!-- /.news-letter -->
             </div><!-- /.contact-box-hide -->
