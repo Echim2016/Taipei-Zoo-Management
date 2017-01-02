@@ -22,8 +22,6 @@ if (deleteImage) {  jQuery('#delete').css({ 'background-image':'url(' + deleteIm
 /* Background Images End
 -------------------------------------------------------------------*/
 
-
-
 /* Document Ready function
 -------------------------------------------------------------------*/
 jQuery(document).ready(function($) {
@@ -39,8 +37,6 @@ jQuery(document).ready(function($) {
     }
     /* Window Height Resize End
     -------------------------------------------------------------------*/
-
-
     
 	/* Main Menu   
 	-------------------------------------------------------------------*/
@@ -56,8 +52,6 @@ jQuery(document).ready(function($) {
 
 	/* Main Menu End  
 	-------------------------------------------------------------------*/
-
-
 
 
 	/* Time Countdown 
@@ -87,21 +81,34 @@ jQuery(document).ready(function($) {
 	    });
 
 
-
 	/* Next Section   
 	-------------------------------------------------------------------*/
-	$('.next-section .go-to-about').click(function() {
+	  $('.next-section .go-to-about').click(function() {
     	$('html,body').animate({scrollTop:$('#about').offset().top}, 1000);
   	});
+
   	$('.next-section .go-to-read').click(function() {
     	$('html,body').animate({scrollTop:$('#read').offset().top}, 1000);
   	});
+
   	$('.next-section .go-to-contact').click(function() {
     	$('html,body').animate({scrollTop:$('#contact').offset().top}, 1000);
   	});
+
   	$('.next-section .go-to-page-top').click(function() {
     	$('html,body').animate({scrollTop:$('#page-top').offset().top}, 1000);
   	});
+
+
+    $('.next-section .go-to-insert').click(function() {
+      $('html,body').animate({scrollTop:$('#insert').offset().top}, 1000);
+    });
+    $('.next-section .go-to-update').click(function() {
+      $('html,body').animate({scrollTop:$('#update').offset().top}, 1000);
+    });
+    $('.next-section .go-to-delete').click(function() {
+      $('html,body').animate({scrollTop:$('#delete').offset().top}, 1000);
+    });
 
   	/* Next Section End
 	-------------------------------------------------------------------*/
@@ -128,37 +135,56 @@ jQuery(document).ready(function($) {
     };
    */
 
-  function link2read() {
-      answer = confirm("你確定要連到清大的首頁嗎？");
-      if (answer)
-        location.href="http://www.nthu.edu.tw";
-  }
-/*
-   $('#subscribe-submit').click(function(){
-
-    var txt;
-    var r = confirm("Press a button!");
-    if (r == true) {
-        txt = "You pressed OK!";
-    }
-    else {
-        txt = "You pressed Cancel!";
-        parant.location('www.google.com');
-
-    }*/
-    //confirm("you sure~?");
-
-
-
   // });
 
 
 
 
-	/* Subscribe End
+	/* Read End
 	-------------------------------------------------------------------*/
 
 
+
+  /* Insert
+  -------------------------------------------------------------------*/
+
+
+// $('#insert-submit').click(function(e){ 
+
+//     e.preventDefault();
+
+//     $('.animal-id-error, .animal-name-error, .animal-order-error, ').hide();
+
+//     Variable declaration
+//     var error = false;
+//     var k_id = $('#insert_id').val();
+//     var k_name = $('#insert_name').val();
+//     var k_order = $('#insert_order').val(); 
+
+
+//     // Form field validation
+//     if(k_id.length == 0){
+//       var error = true; 
+//       $('.animal-id-error').html('<i class="fa fa-exclamation"></i> Animal ID is required.').fadeIn();
+//     }  
+
+//     if(k_name.length == 0){
+//       var error = true;
+//       $('.animal-name-error').html('<i class="fa fa-exclamation"></i> Animal name is required.').fadeIn();
+//     }  
+
+    
+//     if(k_order.length == 0){
+//       var error = true;
+//      $('.animal-order-error').html('<i class="fa fa-exclamation"></i> Animal order is required.').fadeIn();
+//     } 
+
+    
+
+// });
+
+  /* Insert End
+  -------------------------------------------------------------------*/
 
 
 	/* Contact
@@ -208,41 +234,42 @@ jQuery(document).ready(function($) {
       $('.contact-message-error').html('<i class="fa fa-exclamation"></i> Please provide a message.').fadeIn();
     }  
 
-    // If there is no validation error, next to process the mail function
-    if(error == false){
+    // // If there is no validation error, next to process the mail function
+    // if(error == false){
 
-        $('#contact-submit').hide();
-        $('#contact-loading').fadeIn();
-        $('.contact-error-field').fadeOut();
-
-
-      // Disable submit button just after the form processed 1st time successfully.
-      $('#contact-submit').attr({'disabled' : 'true', 'value' : 'Sending' });
-
-      /* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
-      $.post("php/email.php", $("#contact-form").serialize(),function(result){
-        //Check the result set from email.php file.
-        if(result == 'sent'){
+    //     $('#contact-submit').hide();
+    //     $('#contact-loading').fadeIn();
+    //     $('.contact-error-field').fadeOut();
 
 
+    //   // Disable submit button just after the form processed 1st time successfully.
+    //   $('#contact-submit').attr({'disabled' : 'true', 'value' : 'Sending' });
 
-          //If the email is sent successfully, remove the submit button
-          $('#first_name').remove();
-          $('#last_name').remove(); 
-          $('#contact_email').remove();
-          $('#subject').remove(); 
-          $('#message').remove();
-          $('#contact-submit').remove(); 
+    //   /* Post Ajax function of jQuery to get all the data from the submission of the form as soon as the form sends the values to email.php*/
+    //   $.post("php/email.php", $("#contact-form").serialize(),function(result){
+    //     //Check the result set from email.php file.
+    //     if(result == 'sent'){
 
-          $('.contact-box-hide').slideUp();
-          $('.contact-message').html('<i class="fa fa-check contact-success"></i><div>Your message has been sent.</div>').fadeIn();
-        } else {
-          $('.btn-contact-container').hide();
-          $('.contact-message').html('<i class="fa fa-exclamation contact-error"></i><div>Something went wrong, please try again later.</div>').fadeIn();
+
+
+    //       //If the email is sent successfully, remove the submit button
+    //       $('#first_name').remove();
+    //       $('#last_name').remove(); 
+    //       $('#contact_email').remove();
+    //       $('#subject').remove(); 
+    //       $('#message').remove();
+    //       $('#contact-submit').remove(); 
+
+    //       $('.contact-box-hide').slideUp();
+    //       $('.contact-message').html('<i class="fa fa-check contact-success"></i><div>Your message has been sent.</div>').fadeIn();
+    //     } else {
+    //       $('.btn-contact-container').hide();
+    //       $('.contact-message').html('<i class="fa fa-exclamation contact-error"></i><div>Something went wrong, please try again later.</div>').fadeIn();
             
-        }
-      });
-    }
+    //     }
+    //   });
+    // }
+
   });  
  
          
@@ -258,12 +285,6 @@ jQuery(document).ready(function($) {
 
 	/* Contact End
 	-------------------------------------------------------------------*/
-
-
-    
-
-    
-
 
 
 });

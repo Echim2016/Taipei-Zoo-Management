@@ -99,7 +99,7 @@
 
     <footer id="footer-section">
       <p class="copyright">
-        &copy; <a href="http://jeweltheme.com/html/kite/">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB team8</a>
+        &copy; <a href="">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB team8</a>
       </p>
     </footer>
     <!-- Footer Section End -->

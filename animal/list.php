@@ -93,12 +93,7 @@
 
         </div><!-- /.container -->
       </div><!-- /.pattern -->
-
-
-   
-
-
-
+      </section>
 
 
     <footer id="footer-section">

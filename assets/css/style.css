@@ -171,10 +171,12 @@ a:focus{
 
 	background-color:rgba(0,0,0,.2);
 	box-shadow: 0 0 1px rgba(255,255,255,.2);
-	margin:70px;
+	margin:10%;
 	padding-top:45px;
 	position:relative;
 }
+
+
 
 .next-section a span{
 	display:inline-block;
@@ -491,8 +493,8 @@ a:focus{
 	content:none;
 }
 .time-count-container{
-	min-height:300px;
-	margin-top:50px;
+	min-height:30px;
+	margin-top:0px;
 }
 .time-box{
 	width:150px;
@@ -716,7 +718,7 @@ form.news-letter{
 	max-width:550px;
 	margin:auto;
 	height:60px;
-	margin-top:70px;
+	margin-top:40px;
 	position:relative;
 }
 form.news-letter .form-control{
@@ -737,16 +739,32 @@ form.news-letter .btn{
 
 	width:60px;
 	height:60px;
-	border:1px solid #fff;
+	border:0px solid #fff;
 	position:absolute;
 	background: transparent;
-	top:100;
-	right:0;
-	font-size:25px;
+	top:200%;
+	left:100%;
+	font-size:40px;
 }
 .btn1:hover{
 	color:#3498db;
 }
+
+.btn2{
+
+	width:60px;
+	height:60px;
+	border:0px solid #fff;
+	position:absolute;
+	background: transparent;
+	top:500%;
+	left:100%;
+	font-size:40px;
+}
+.btn1:hover{
+	color:#3498db;
+}
+
 
 form.news-letter .btn:hover{
 	color:#3498db;
@@ -793,7 +811,7 @@ form.news-letter .btn:hover{
 
 /* 7 - Contact Section
 ---------------------------------------------------------------------- */
-#contact .next-section a{
+#contact #delete .next-section a{
 
 	-webkit-transform:rotate(180deg);
 	   -moz-transform:rotate(180deg);
@@ -801,6 +819,16 @@ form.news-letter .btn:hover{
 	     -o-transform:rotate(180deg);
 	        transform:rotate(180deg);
 }
+
+#delete .next-section a{
+
+	-webkit-transform:rotate(180deg);
+	   -moz-transform:rotate(180deg);
+	    -ms-transform:rotate(180deg);
+	     -o-transform:rotate(180deg);
+	        transform:rotate(180deg);
+}
+
 #contact-form .col-sm-6, 
 #contact-form .col-sm-10,
 #contact-form .col-sm-2{
@@ -846,7 +874,12 @@ form.news-letter .btn:hover{
 .last-name-error,
 .contact-email-error,
 .contact-subject-error,
-.contact-message-error{
+.contact-message-error,
+.animal-id-error,
+.animal-name-error,
+.animal-order-error
+{
+
 	color: #ffffff;
 	position: absolute;
 	background: rgba(52, 152, 219,1);
@@ -861,7 +894,10 @@ form.news-letter .btn:hover{
 .last-name-error:after,
 .contact-email-error:after,
 .contact-subject-error:after,
-.contact-message-error:after{
+.contact-message-error:after,
+.animal-id-error:after,
+.animal-name-error:after,
+.animal-order-error:after{
 	position: absolute;
 	content: "";
 	width: 0;

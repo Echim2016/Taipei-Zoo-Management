@@ -1,12 +1,12 @@
 <?php
 
-  $animal_name = $_REQUEST['read_name'];
+  $employee_name = $_REQUEST['read_name'];
 
   $link = mysql_connect("localhost","root","");
   mysql_select_db("taipeizoo");
   mysql_query("set names utf8");
   
-  $data = mysql_query("select * from animal where A_Name ='$animal_name' OR A_ID ='$animal_name' OR Orders ='$animal_name'");
+  $data = mysql_query("select * from employee where E_Name ='$employee_name' OR E_ID ='$employee_name' ");
 
   if (!$link) {
     die('error'.mysql_error());
@@ -58,11 +58,16 @@
           </p><!-- /.section-description -->
 
             <div>
+              
             <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
             <tr>
-            <td align="center">id</td>
-            <td align="center">Animal Name</td>
-            <td align="center">Orders</td>
+            <td align="center">E_ID</td>
+            <td align="center">Employee Name</td>
+            <td align="center">Sex</td>
+            <td align="center">Phone</td>
+            <td align="center">Age</td>
+            <td align="center">Dept_ID</td>
+
             </tr>
 
             <?php
@@ -78,6 +83,9 @@
               <td align="center"><?php echo $rs[0]?></td>
               <td align="center"><?php echo $rs[1]?></td>
               <td align="center"><?php echo $rs[2]?></td>
+              <td align="center"><?php echo $rs[3]?></td>
+              <td align="center"><?php echo $rs[4]?></td>
+              <td align="center"><?php echo $rs[5]?></td>
             </tr>
             <?php
               }
@@ -87,7 +95,7 @@
             </div><!-- /.contact-box-hide -->
 
           <div class="next-section">
-            <a href="javascript:history.back()"><span></span></a>
+            <a href="employee.php"><span></span></a>
           </div><!-- /.next-section -->
 
         </div><!-- /.container -->

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>	Animal Homepage </title>
+	<title>	Employee Homepage </title>
 	<meta name="description" content="Kite Coming Soon HTML Template by Jewel Theme" >
 	<meta name="author" content="Jewel Theme">
 
@@ -50,7 +50,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Search for animals? 
+					Search for employee? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -61,7 +61,7 @@
 					<p class="alert-warning"></p>
 
 					<div class="subscribe-hide">
-						<input class="form-control" type="email" id="subscribe-email" name="read_name" placeholder="Enter the animal's name / id / orders!"  required>
+						<input class="form-control" type="email" id="subscribe-email" name="read_name" placeholder="Enter the employee's name / id !"  required>
 						<button  type="submit" id="subscribe-submit" class="btn" "><i class="fa fa-search"></i></button>
 					</div><!-- /.subscribe-hide -->
 				</form><!-- /.news-letter -->
@@ -88,7 +88,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Insert<br> animals? 
+					Insert<br> employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -97,18 +97,15 @@
 				<form class="news-letter" action="insert.php" method="post">
 					<div class="subscribe-hide">
 
-						<input class="form-control" type="email" id="inser_id" name="insert_id" placeholder="Enter the animal's id !"  required>
-						<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the animal's name"  required>
-						<input class="form-control" type="email" id="insert_order" name="insert_order" placeholder="Enter the animal's orders!"  required>
+						<input class="form-control" type="email" id="insert_id" name="insert_id" placeholder="Enter the employee's id !"  required>
+						<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the employee's name"  required>
+						<input class="form-control" type="email" id="insert_sex" name="insert_sex" placeholder="Enter the employee's sex !"  required>
+						<input class="form-control" type="email" id="insert_phone" name="insert_phone" placeholder="Enter the employee's phone !"  required>
+						<input class="form-control" type="email" id="insert_age" name="insert_age" placeholder="Enter the employee's age !"  required>
+						<input class="form-control" type="email" id="insert_did" name="insert_did" placeholder="Enter the employee's department ID!"  required>
 
-						<button class="btn1" "><i class="fa fa-chevron-circle-right"></i></button>
-
-						<span id="subscribe-loading" class="btn"> <i class="fa fa-refresh fa-spin"></i> </span>
-
-						<div class="subscribe-error"></div>
-
+						<button class="btn2" "><i class="fa fa-chevron-circle-right"></i></button>
 					</div><!-- /.subscribe-hide -->
-					<div class="subscribe-message"></div>
 				</form><!-- /.news-letter -->
 
 				<br><br><br><br>
@@ -132,13 +129,11 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Update<br> animals? 
+					Update<br> employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
 				</p><!-- /.section-description -->
-
-		
 
 				<div class="social-btn-container">
 
@@ -147,7 +142,6 @@
 					<p class="time-until">
 					<a href="list.php"><span>GO!!!!!!!</span></a>
 					</p><!-- /.time-until -->
-
 
 					<div class="next-section">
 						<a class="go-to-delete"><span></span></a>
@@ -170,14 +164,14 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Delete<br> animals? 
+					Delete<br> employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
 				</p><!-- /.section-description -->
 
 					<p class="time-until">
-						<a href="list.php"><span>GO!!!!!!!</span></a>
+					<a href="list.php"><span>GO!!!!!!!</span></a>
 					</p><!-- /.time-until -->
 
 					<div class="next-section">
@@ -189,6 +183,7 @@
 
 		</section><!-- /#subscribe -->
 		<!-- Subscribe Section End -->
+
 
 		<!-- Footer Section -->
 		<footer id="footer-section">

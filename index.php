@@ -36,15 +36,7 @@ if (!$link) {
 
 </head>
 <body>
-<!--
-	<?php
-		$rs = mysql_fetch_row($data);
-		echo "$data  A_ID <br> $rs[0] <br>";
-		echo "$data <br> A_NAME <br> $rs[1] <br>";
-		echo "$data <br> ORDER <br> $rs[2] <br>";
 
-	?>
--->
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="loader">
@@ -82,6 +74,10 @@ if (!$link) {
 				<li><a href="#read">Read</a></li>	
 				<li><a href="#contact">Contact</a></li>		
 			</ul> <!-- /.nav .navbar-nav -->
+			<ul class="nav navbar-nav">
+				<li><a href="animal/animal.php">Go to Animal</a></li>		
+				<li><a href="employee/employee.php">Go to Employee</a></li>				
+			</ul>
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->
 	<!-- Main Menu End -->
@@ -271,7 +267,7 @@ if (!$link) {
 				</div><!-- /.team-container -->
 
 				<div class="next-section">
-					<a class="go-to-subscribe"><span></span></a>
+					<a class="go-to-read"><span></span></a>
 				</div><!-- /.next-section -->
 
 			</div><!-- /.container -->
@@ -280,14 +276,6 @@ if (!$link) {
 		
 	</section><!-- /#about -->
 	<!-- About Us Section End -->
-
-<script>
-function link2read() {
-	answer = confirm("你確定要連到清大的首頁嗎？");
-	if (answer)
-		location.href="http://www.nthu.edu.tw";
-}
-</script>
 
 
 	<!-- Read Section -->
@@ -313,7 +301,6 @@ function link2read() {
 					<div class="subscribe-hide">
 						<input class="form-control" type="email" id="subscribe-email" name="read_name" placeholder="Enter the animal's name / id / orders!"  required>
 						<button  type="submit" id="subscribe-submit" class="btn" "><i class="fa fa-search"></i></button>
-						<button  type="submit1" id="subscribe-submit1" class="btn" "><i class="fa fa-search"></i></button>
 						<span id="subscribe-loading" class="btn"> <i class="fa fa-refresh fa-spin"></i> </span>
 						<div class="subscribe-error"></div>
 					</div><!-- /.subscribe-hide -->
@@ -393,12 +380,10 @@ function link2read() {
 		</section><!-- /#contact -->
 		<!-- Contact Section End -->
 
-
-
 		<!-- Footer Section -->
 		<footer id="footer-section">
 			<p class="copyright">
-				&copy; <a href="http://jeweltheme.com/html/kite/">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="http://jeweltheme.com">Jewel Theme</a>
+				&copy; <a href="">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB Team8</a>
 			</p>
 		</footer>
 		<!-- Footer Section End -->
