@@ -50,7 +50,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Search for employee? 
+					Search for employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
