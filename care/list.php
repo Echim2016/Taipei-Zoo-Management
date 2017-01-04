@@ -3,7 +3,7 @@
   $link = mysql_connect("localhost","root","");
   mysql_select_db("taipeizoo");
   mysql_query("set names utf8");
-  $data = mysql_query("select * from employee");
+  $data = mysql_query("select * from care_record");
   if (!$link) {
     die('error'.mysql_error());
   }
@@ -55,12 +55,11 @@
               
             <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
             <tr>
-            <td align="center">E_ID</td>
-            <td align="center">Employee Name</td>
-            <td align="center">Sex</td>
-            <td align="center">Phone</td>
-            <td align="center">Age</td>
-            <td align="center">Dept_ID</td>
+            <td align="center">Care ID</td>
+            <td align="center">Animal ID</td>
+            <td align="center">Employee ID</td>
+            <td align="center">Check Date</td>
+            <td align="center">Health Information</td>
             <td align="center">Update</td>
             <td align="center">Delete</td>
 
@@ -82,7 +81,6 @@
               <td align="center"><?php echo $rs[2]?></td>
               <td align="center"><?php echo $rs[3]?></td>
               <td align="center"><?php echo $rs[4]?></td>
-              <td align="center"><?php echo $rs[5]?></td>
               <td align="center"><a href="update0.php?update_id=<? echo $rs[0]; ?>">Update</a></td>
               <td align="center"><a href="delete.php?id=<? echo $rs[0]; ?>">Delete</a></td>
             </tr>
@@ -94,7 +92,7 @@
             </div><!-- /.contact-box-hide -->
 
           <div class="next-section">
-            <a href="employee.php"><span></span></a>
+            <a href="care.php"><span></span></a>
           </div><!-- /.next-section -->
 
         </div><!-- /.container -->
@@ -104,7 +102,7 @@
 
     <footer id="footer-section">
       <p class="copyright">
-        &copy; <a href="http://jeweltheme.com/html/kite/">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB team8</a>
+        &copy; <a href="">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB team8</a>
       </p>
     </footer>
     <!-- Footer Section End -->

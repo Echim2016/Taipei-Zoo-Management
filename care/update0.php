@@ -6,7 +6,7 @@
 	  mysql_select_db("taipeizoo");
 	  mysql_query("set names utf8");
 	  
-	  $data = mysql_query("select * from employee where E_ID ='$tid'");
+	  $data = mysql_query("select * from care_record where CA_ID ='$tid'");
 
 	  if (!$link) {
 	    die('error'.mysql_error());
@@ -17,7 +17,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>	Animal Update Page</title>
+	<title>	Care Update Page</title>
 	<meta name="description" content="Kite Coming Soon HTML Template by Jewel Theme" >
 	<meta name="author" content="Jewel Theme">
 
@@ -57,12 +57,11 @@
           </p><!-- /.section-description -->
           <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
 	            <tr>
-		            <td align="center">E_ID</td>
-		            <td align="center">Employee Name</td>
-		            <td align="center">Sex</td>
-		            <td align="center">Phone</td>
-		            <td align="center">Age</td>
-		            <td align="center">Dept_ID</td>
+	                <td align="center">Care ID</td>
+		            <td align="center">Animal ID</td>
+		            <td align="center">Employee ID</td>
+		            <td align="center">Check Date</td>
+		            <td align="center">Health Information</td>
 	            </tr>
 
 	            <?php
@@ -80,7 +79,6 @@
 	              <td align="center"><?php echo $rs[2]?></td>
                   <td align="center"><?php echo $rs[3]?></td>
 	              <td align="center"><?php echo $rs[4]?></td>
-	              <td align="center"><?php echo $rs[5]?></td>
 	            </tr>
 	            <?php
 	              }
@@ -94,18 +92,17 @@
                   <p class="alert-warning"></p>
 
                   <div class="subscribe-hide">
-					<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the employee's name"  required>
-					<input class="form-control" type="email" id="insert_sex" name="insert_sex" placeholder="Enter the employee's sex !"  required>
-					<input class="form-control" type="email" id="insert_phone" name="insert_phone" placeholder="Enter the employee's phone !"  required>
-					<input class="form-control" type="email" id="insert_age" name="insert_age" placeholder="Enter the employee's age !"  required>
-					<input class="form-control" type="email" id="insert_did" name="insert_did" placeholder="Enter the employee's department ID!"  required>
+					<input class="form-control" type="email" id="update_aid" name="update_aid" placeholder="Enter the animal's id"  required>
+					<input class="form-control" type="email" id="update_eid" name="update_eid" placeholder="Enter the employee's id !"  required>
+					<input class="form-control" type="email" id="update_date" name="update_date" placeholder="Enter the animal's checking date !"  required>
+					<input class="form-control" type="email" id="update_health" name="update_health" placeholder="Enter the animal's health information !"  required>
                     <button class="btn1"><i class="fa fa-chevron-circle-right"></i></button>
                   </div><!-- /.subscribe-hide -->
              </form><!-- /.news-letter -->
             </div><!-- /.contact-box-hide -->
           <br><br><br><br><br><br><br><br><br>
           <div class="next-section">
-            <a href="employee.php"><span></span></a>
+            <a href="care.php"><span></span></a>
           </div><!-- /.next-section -->
 
         </div><!-- /.container -->

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>	Employee Homepage </title>
+	<title>	Animal Care Homepage </title>
 	<meta name="description" content="Kite Coming Soon HTML Template by Jewel Theme" >
 	<meta name="author" content="Jewel Theme">
 
@@ -50,7 +50,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Search for employee? 
+					Search for <br>Care? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -61,7 +61,7 @@
 					<p class="alert-warning"></p>
 
 					<div class="subscribe-hide">
-						<input class="form-control" type="email" id="subscribe-email" name="read_name" placeholder="Enter the employee's name / id !"  required>
+						<input class="form-control" type="email" id="subscribe-email" name="read_name" placeholder="Enter the animal care's id or animal's id !"  required>
 						<button  type="submit" id="subscribe-submit" class="btn" "><i class="fa fa-search"></i></button>
 					</div><!-- /.subscribe-hide -->
 				</form><!-- /.news-letter -->
@@ -88,7 +88,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Insert<br> employees? 
+					Insert<br> Animal Care? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -97,18 +97,18 @@
 				<form class="news-letter" action="insert.php" method="post">
 					<div class="subscribe-hide">
 
-						<input class="form-control" type="email" id="insert_id" name="insert_id" placeholder="Enter the employee's id !"  required>
-						<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the employee's name"  required>
-						<input class="form-control" type="email" id="insert_sex" name="insert_sex" placeholder="Enter the employee's sex !"  required>
-						<input class="form-control" type="email" id="insert_phone" name="insert_phone" placeholder="Enter the employee's phone !"  required>
-						<input class="form-control" type="email" id="insert_age" name="insert_age" placeholder="Enter the employee's age !"  required>
-						<input class="form-control" type="email" id="insert_did" name="insert_did" placeholder="Enter the employee's department ID!"  required>
+						<input class="form-control" type="email" id="insert_caid" name="insert_caid" placeholder="Enter the animal care's id !"  required>
+						<input class="form-control" type="email" id="insert_aid" name="insert_aid" placeholder="Enter the animal's id"  required>
+						<input class="form-control" type="email" id="insert_eid" name="insert_eid" placeholder="Enter the employee's id !"  required>
+						<input class="form-control" type="email" id="insert_date" name="insert_date" placeholder="Enter the animal's checking date !"  required>
+						<input class="form-control" type="email" id="insert_health" name="insert_health" placeholder="Enter the animal's health information !"  required>
 
-						<button class="btn2" "><i class="fa fa-chevron-circle-right"></i></button>
+						<button class="btn4" "><i class="fa fa-chevron-circle-right"></i></button>
 					</div><!-- /.subscribe-hide -->
 				</form><!-- /.news-letter -->
 
-				<br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br>
+
 					<div class="next-section">
 						<a class="go-to-update"><span></span></a>
 					</div><!-- /.next-section -->
@@ -129,7 +129,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Update<br> employees? 
+					Update<br> Animal Care? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
@@ -164,7 +164,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Delete<br> employees? 
+					Delete<br> Animal Care? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.

@@ -1,12 +1,12 @@
 <?php
 
-  $employee_name = $_REQUEST['read_name'];
+  $care_name = $_REQUEST['read_name'];
 
   $link = mysql_connect("localhost","root","");
   mysql_select_db("taipeizoo");
   mysql_query("set names utf8");
   
-  $data = mysql_query("select * from employee where E_Name ='$employee_name' OR E_ID ='$employee_name' ");
+  $data = mysql_query("select * from care_record where E_ID ='$care_name' OR CA_ID ='$care_name' ");
 
   if (!$link) {
     die('error'.mysql_error());
@@ -61,12 +61,11 @@
               
             <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
             <tr>
-            <td align="center">E_ID</td>
-            <td align="center">Employee Name</td>
-            <td align="center">Sex</td>
-            <td align="center">Phone</td>
-            <td align="center">Age</td>
-            <td align="center">Dept_ID</td>
+            <td align="center">Care ID</td>
+            <td align="center">Animal ID</td>
+            <td align="center">Employee ID</td>
+            <td align="center">Check Date</td>
+            <td align="center">Health Information</td>
 
             </tr>
 
@@ -85,7 +84,6 @@
               <td align="center"><?php echo $rs[2]?></td>
               <td align="center"><?php echo $rs[3]?></td>
               <td align="center"><?php echo $rs[4]?></td>
-              <td align="center"><?php echo $rs[5]?></td>
             </tr>
             <?php
               }
@@ -95,7 +93,7 @@
             </div><!-- /.contact-box-hide -->
 
           <div class="next-section">
-            <a href="employee.php"><span></span></a>
+            <a href="care.php"><span></span></a>
           </div><!-- /.next-section -->
 
         </div><!-- /.container -->

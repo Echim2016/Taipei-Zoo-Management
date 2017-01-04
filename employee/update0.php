@@ -94,11 +94,11 @@
                   <p class="alert-warning"></p>
 
                   <div class="subscribe-hide">
-					<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the employee's name"  required>
-					<input class="form-control" type="email" id="insert_sex" name="insert_sex" placeholder="Enter the employee's sex !"  required>
-					<input class="form-control" type="email" id="insert_phone" name="insert_phone" placeholder="Enter the employee's phone !"  required>
-					<input class="form-control" type="email" id="insert_age" name="insert_age" placeholder="Enter the employee's age !"  required>
-					<input class="form-control" type="email" id="insert_did" name="insert_did" placeholder="Enter the employee's department ID!"  required>
+					<input class="form-control" type="email" id="update_name" name="update_name" placeholder="Enter the employee's name"  required>
+					<input class="form-control" type="email" id="update_sex" name="update_sex" placeholder="Enter the employee's sex !"  required>
+					<input class="form-control" type="email" id="update_phone" name="update_phone" placeholder="Enter the employee's phone !"  required>
+					<input class="form-control" type="email" id="update_age" name="update_age" placeholder="Enter the employee's age !"  required>
+					<input class="form-control" type="email" id="update_did" name="update_did" placeholder="Enter the employee's department ID!"  required>
                     <button class="btn1"><i class="fa fa-chevron-circle-right"></i></button>
                   </div><!-- /.subscribe-hide -->
              </form><!-- /.news-letter -->
