@@ -603,10 +603,14 @@ a:focus{
 	font-size:18px;
 	line-height:40px;
 	display:inline-block;
-	background-color:#3498db;
+	border: 1px solid white;
+	border-radius: 10px 10px 10px;
+	opacity: 0.8;
+	/*background-color:#3498db;*/
 	text-transform:uppercase;
 	padding:0px 25px;
 }
+
 /* 4 - Page Top Section End 
 ---------------------------------------------------------------------- */
 
@@ -769,6 +773,7 @@ a:focus{
 	position:absolute; 
 	width:25%; 
 	bottom:0; 
+	
 }
 .db-container:hover {
 	opacity: 0.75;
@@ -780,6 +785,7 @@ a:focus{
 	font-weight:300;
 	font-size:80px;
 	z-index: 1;	
+
 }
 #database .section-description {
 	font-weight:300;

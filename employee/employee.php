@@ -53,7 +53,7 @@
 					Search for employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+					<br>
 				</p><!-- /.section-description -->
 
 				<form class="news-letter" action="read.php" method="post">
@@ -91,7 +91,6 @@
 					Insert<br> employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
 				</p><!-- /.section-description -->
 					
 				<form class="news-letter" action="insert.php" method="post">
@@ -132,7 +131,7 @@
 					Update<br> employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+				<br><br>
 				</p><!-- /.section-description -->
 
 				<div class="social-btn-container">
@@ -167,7 +166,7 @@
 					Delete<br> employees? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+				<br><br>
 				</p><!-- /.section-description -->
 
 				
