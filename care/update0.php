@@ -53,7 +53,7 @@
             Update it ! 
           </h2><!-- /.Section-title  -->
           <p class="section-description">
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+	              <br><br>
           </p><!-- /.section-description -->
           <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
 	            <tr>
@@ -96,7 +96,7 @@
 					<input class="form-control" type="email" id="update_eid" name="update_eid" placeholder="Enter the employee's id !"  required>
 					<input class="form-control" type="email" id="update_date" name="update_date" placeholder="Enter the animal's checking date !"  required>
 					<input class="form-control" type="email" id="update_health" name="update_health" placeholder="Enter the animal's health information !"  required>
-                    <button class="btn1"><i class="fa fa-chevron-circle-right"></i></button>
+                    <button class="btn3"><i class="fa fa-chevron-circle-right"></i></button>
                   </div><!-- /.subscribe-hide -->
              </form><!-- /.news-letter -->
             </div><!-- /.contact-box-hide -->

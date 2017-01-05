@@ -1,9 +1,18 @@
 <?php
 
+  $order_name = $_REQUEST['order'];
+
   $link = mysql_connect("localhost","root","");
   mysql_select_db("taipeizoo");
   mysql_query("set names utf8");
-  $data = mysql_query("select * from animal");
+  
+  $data = mysql_query("select * from order_to_class where A_Order ='$order_name' ");
+
+  $class_name = mysql_fetch_row($data);
+
+
+  $data2 = my_sql_query("select * from class_to_phylum where A_Class ='$class_name[1]' ");
+
   if (!$link) {
     die('error'.mysql_error());
   }
@@ -54,15 +63,11 @@
           </p><!-- /.section-description -->
 
             <div>
-              
             <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
             <tr>
-            <td align="center">ID</td>
-            <td align="center">Animal Name</td>
-            <td align="center">Orders</td>
-            <td align="center">Update</td>
-            <td align="center">Delete</td>
-
+            <td align="center">Animal Phylum</td>
+            <td align="center">Animal Class</td>
+            <td align="center">Animal Order</td>
             </tr>
 
             <?php
@@ -70,27 +75,25 @@
                 echo'error';
               }
               else{
-                  for($i=1;$i<=mysql_num_rows($data);$i++){
-                    $rs=mysql_fetch_row($data);
+              for($i=1;$i<=mysql_num_rows($data);$i++){
+                $class=mysql_fetch_row($data);
+                $phylum=mysql_fetch_row($data2);
             ?>
 
             <tr>
-            <!-- whether rs[id] or rs[0] -->
-              <td align="center"><?php echo $rs[0]?></td>
-              <td align="center"><?php echo $rs[1]?></td>
-              <td align="center"><?php echo $rs[2]?></td>
-              <td align="center"><a href="update.php">Update</a></td>
-              <td align="center"><a href="delete.php?id=<? echo $rs[0]; ?>">Delete</a></td>
+              <td align="center"><?php echo $phylum[0]?></td>
+              <td align="center"><?php echo $class[0]?></td>
+              <td align="center"><?php echo $order_name?></td>
             </tr>
             <?php
-                  } 
               }
+            }
             ?>
             </table>
             </div><!-- /.contact-box-hide -->
 
           <div class="next-section">
-            <a href="animal.php"><span></span></a>
+            <a href="list.php"><span></span></a>
           </div><!-- /.next-section -->
 
         </div><!-- /.container -->
@@ -101,7 +104,7 @@
 
     <footer id="footer-section">
       <p class="copyright">
-        &copy; <a href="http://jeweltheme.com/html/kite/">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB team8</a>
+        &copy; <a href="">IM107</a> 2016-2017, All Rights Reserved. Designed by & Developed by <a href="">DB team8</a>
       </p>
     </footer>
     <!-- Footer Section End -->

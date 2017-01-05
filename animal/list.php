@@ -48,7 +48,7 @@
             Here it is! 
           </h2><!-- /.Section-title  -->
           <p class="section-description">
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+              <br><br>
           </p><!-- /.section-description -->
 
             <div>
@@ -75,8 +75,8 @@
             <tr>
             <!-- whether rs[id] or rs[0] -->
               <td align="center"><?php echo $rs[0]?></td>
-              <td align="center"><?php echo $rs[1]?></td>
-              <td align="center"><?php echo $rs[2]?></td>
+              <td align="center"><a href="readAname.php?aname=<? echo $rs[0]; ?>"><?php echo $rs[1]?></a></td>
+              <td align="center"><?php echo $rs[2]?></a></td>
               <td align="center"><a href="update0.php?update_id=<? echo $rs[0]; ?>">Update</a></td>
               <td align="center"><a href="delete.php?id=<? echo $rs[0]; ?>">Delete</a></td>
             </tr>

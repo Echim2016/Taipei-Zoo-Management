@@ -9,16 +9,14 @@
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-
 	<!-- Bootstrap  -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
 	<!-- icon fonts font Awesome -->
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
 	<!-- Custom Styles -->
 	<link href="assets/css/style.css" rel="stylesheet">
 
+	
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
@@ -90,7 +88,6 @@
 				</h2><!-- /.Section-title  -->
 				<div id="time_countdown" class="time-count-container">
 
-					
 				</div><!-- /.time-count-container -->
 
 				<div class="next-section" style="pointer-events: auto">

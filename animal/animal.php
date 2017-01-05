@@ -97,7 +97,7 @@
 					<div class="subscribe-hide">
 
 						<input class="form-control" type="email" id="inser_id" name="insert_id" placeholder="Enter the animal's id !"  required>
-						<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the animal's name"  required>
+						<input class="form-control" type="email" id="insert_name" name="insert_name" placeholder="Enter the animal's Chinese name"  required>
 						<input class="form-control" type="email" id="insert_order" name="insert_order" placeholder="Enter the animal's orders!"  required>
 
 						<button class="btn1" "><i class="fa fa-chevron-circle-right"></i></button>

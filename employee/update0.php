@@ -53,7 +53,7 @@
             Update it ! 
           </h2><!-- /.Section-title  -->
           <p class="section-description">
-            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+  	              <br><br>
           </p><!-- /.section-description -->
           <table width="100%" style="border:2px #FFFFFF solid; padding:5px; font-family:monospace;" rules="all" cellpadding='5'>
 	            <tr>
@@ -99,7 +99,7 @@
 					<input class="form-control" type="email" id="update_phone" name="update_phone" placeholder="Enter the employee's phone !"  required>
 					<input class="form-control" type="email" id="update_age" name="update_age" placeholder="Enter the employee's age !"  required>
 					<input class="form-control" type="email" id="update_did" name="update_did" placeholder="Enter the employee's department ID!"  required>
-                    <button class="btn1"><i class="fa fa-chevron-circle-right"></i></button>
+                    <button class="btn4"><i class="fa fa-chevron-circle-right"></i></button>
                   </div><!-- /.subscribe-hide -->
              </form><!-- /.news-letter -->
             </div><!-- /.contact-box-hide -->
