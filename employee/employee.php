@@ -27,13 +27,13 @@
 		<nav class="collapse navbar-collapse">
 			<!-- Main navigation -->
 			<ul id="headernavigation" class="nav navbar-nav">
-				<li class="active"><a href="#read">Read</a></li>	
-				<li><a href="#insert">Insert</a></li>	
-				<li><a href="#update">Update</a></li>	
-				<li><a href="#delete">Delete</a></li>	
+				<li class="active"><a href="#read">[ Read ]</a></li>	
+				<li><a href="#insert">[ Insert ]</a></li>	
+				<li><a href="#update">[ Update ]</a></li>	
+				<li><a href="#delete">[ Delete ]</a></li>	
 			</ul> <!-- /.nav .navbar-nav -->
 			<ul class="nav navbar-nav">
-				<li><a href="../index.php">Back Home</a></li>			
+				<li><a href="../index0.php">[ Back Home ]</a></li>			
 			</ul>
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->

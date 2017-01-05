@@ -27,13 +27,14 @@
 		<nav class="collapse navbar-collapse">
 			<!-- Main navigation -->
 			<ul id="headernavigation" class="nav navbar-nav">
-				<li class="active"><a href="#read">Read</a></li>	
-				<li><a href="#insert">Insert</a></li>	
-				<li><a href="#update">Update</a></li>	
-				<li><a href="#delete">Delete</a></li>	
+				<li class="active"><a href="#read">[ Read] </a></li>	
+				<li><a href="#insert">[ Insert ]</a></li>	
+				<li><a href="#update">[ Update ]</a></li>	
+				<li><a href="#delete">[ Delete ]</a></li>	
 			</ul> <!-- /.nav .navbar-nav -->
+			
 			<ul class="nav navbar-nav">
-				<li><a href="../index.php">Back Home</a></li>			
+				<li><a href="../index0.php">[ Back Home ]</a></li>			
 			</ul>
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->
@@ -50,7 +51,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					Search for <br>Care? 
+					Search for <br>Animal Care? 
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
 					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.

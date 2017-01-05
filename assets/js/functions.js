@@ -8,6 +8,8 @@ var  contactImage = jQuery('#contact').data('background-image');
 var  insertImage = jQuery('#insert').data('background-image');
 var  updateImage = jQuery('#update').data('background-image');
 var  deleteImage = jQuery('#delete').data('background-image');
+var  databaseImage = jQuery('#database').data('background-image');
+
 
 
 if (pageTopImage) {  jQuery('#page-top').css({ 'background-image':'url(' + pageTopImage + ')' }); };
@@ -17,6 +19,7 @@ if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contac
 if (insertImage) {  jQuery('#insert').css({ 'background-image':'url(' + insertImage + ')' }); };
 if (updateImage) {  jQuery('#update').css({ 'background-image':'url(' + updateImage + ')' }); };
 if (deleteImage) {  jQuery('#delete').css({ 'background-image':'url(' + deleteImage + ')' }); };
+if (databaseImage) {  jQuery('#database').css({ 'background-image':'url(' + databaseImage + ')' }); };
 
 
 /* Background Images End
@@ -109,7 +112,9 @@ jQuery(document).ready(function($) {
     $('.next-section .go-to-delete').click(function() {
       $('html,body').animate({scrollTop:$('#delete').offset().top}, 1000);
     });
-
+    $('.next-section .go-to-database').click(function() {
+      $('html,body').animate({scrollTop:$('#database').offset().top}, 1000);
+    });
   	/* Next Section End
 	-------------------------------------------------------------------*/
 
@@ -121,7 +126,7 @@ jQuery(document).ready(function($) {
 $(window).load(function () {    
     "use strict";
     $("#loader").fadeOut();
-    $("#preloader").delay(350).fadeOut("slow");
+    $("#preloader").delay(250).fadeOut("fast");
 });
  /* Preloder End
 -------------------------------------------------------------------*/
