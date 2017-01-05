@@ -4,7 +4,7 @@
 
   $link = mysql_connect("localhost","root","");
   mysql_select_db("taipeizoo");
-  //mysql_query("set names utf8");
+  mysql_query("set names utf8");
   
   $data = mysql_query("select * from animal where A_Name ='$animal_name' OR A_ID ='$animal_name' OR Orders ='$animal_name'");
 
