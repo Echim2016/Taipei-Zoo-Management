@@ -6,7 +6,7 @@
   mysql_select_db("taipeizoo");
   mysql_query("set names utf8");
   
-  $data = mysql_query("select * from animal where A_Name ='$animal_name' OR A_ID ='$animal_name' OR A_Order ='$animal_name'");
+  $data = mysql_query("select * from animal where A_Name ='$animal_name' OR A_ID ='$animal_name' OR Orders ='$animal_name'");
 
   if (!$link) {
     die('error'.mysql_error());
